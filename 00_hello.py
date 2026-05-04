@@ -1,12 +1,9 @@
 # esto es un comentario
 print("Hola python") 
 
-"""
-esto es un comentario entre vairas lineas
-es decir que puedo escribir lo que sea
-y no va a afectar al codigo
-"""
-
+# esto es un comentario entre varias lineas
+# es decir que puedo escribir lo que sea
+# y no va a afectar al codigo
 
 # Consultar el tipo de dato
 print(type('Hola')) # esto sirve para saver el tipo de dato de lo que se esta imprimendo
