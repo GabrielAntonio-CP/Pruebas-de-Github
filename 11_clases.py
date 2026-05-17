@@ -13,9 +13,15 @@ class Person:
 class Person2:
     def __init__(self, name, surname): 
         self.fullname = f"{name} {surname}"
+        self.__name = name
+        self.__surname = surname #de esta manera se definen variables privadas para no poder modificarse
 
     def walk (self): #se debe se pasar self siempre que se quieran usar parametros de la misma clase
         print(f"{self.fullname} Esta caminando")
+    
+    def get_name (self):
+        return self.__name
+
        
 
 my_person = Person("juan","perez")
@@ -24,6 +30,7 @@ print(f"{my_person.name} {my_person.surname}") #podemos crear propiedades con la
 my_person2 = Person2("Luis", "Valentino")
 print(my_person2.fullname)
 my_person2.walk()
+my_person2.get_name()
 
 my_person2.fullname = "Alice M. la CEO"
 print(my_person2.fullname)
